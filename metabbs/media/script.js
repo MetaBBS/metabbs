@@ -334,7 +334,7 @@ function triggerCloseLinks() {
 
 function fixFormActions(href) {
 	$$('#dialog form').each(function (form) {
-		if (!form.action) form.action = href;
+		if (!form.getAttribute('action')) form.action = href;
 	});
 }
 
